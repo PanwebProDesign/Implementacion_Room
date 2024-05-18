@@ -1,4 +1,4 @@
-package com.protectly.sqllite
+package com.protectly.sqllite.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
