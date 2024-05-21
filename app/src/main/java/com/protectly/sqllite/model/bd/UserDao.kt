@@ -10,14 +10,14 @@ import androidx.room.Update
 interface UserDao {
 
     @Query("SELECT * FROM users")
-    fun obtenerTodos(): List<User>
+    fun getAllUsers(): List<User>
 
     @Insert
-    fun insertar(usuario: User)
+    fun insert(usuario: User)
 
     @Update
-    fun actualizar(usuario: User)
+    fun update(usuario: User)
 
     @Delete
-    fun eliminar(usuario: User)
+    fun delete(usuario: User)
 }

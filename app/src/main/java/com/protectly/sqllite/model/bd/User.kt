@@ -7,8 +7,11 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "users")
 data class User(
+
+    //aqui el autoGenerate es para que se genere automaticamente
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    val id: Int = 0,
+
     @ColumnInfo(name = "firstname") //cambia el nombre de la columna en la tabla
     val first_name: String,
     val last_name: String,
